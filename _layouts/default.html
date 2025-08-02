@@ -3,12 +3,62 @@
 <head>
   <meta charset="UTF-8" />
   <title>{{ page.title }}</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding-top: 60px; /* space for fixed navbar */
+    }
+    header {
+      background: #333;
+      color: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      padding: 0 2rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      z-index: 1000;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.25rem;
+      flex-grow: 1;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+    footer {
+      background: #f0f0f0;
+      padding: 1rem;
+      text-align: center;
+      color: #555;
+      margin-top: 3rem;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>My Website Header</h1>
+    <h1>My Website</h1>
     <nav>
-      <a href="/">Home</a> | <a href="/about">About</a> | <a href="/contact">Contact</a>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/contact">Contact</a>
     </nav>
   </header>
 
